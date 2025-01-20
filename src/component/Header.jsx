@@ -1,8 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router"
+import { Spin as Hamburger } from 'hamburger-react'
 
 const Header = () => {
+    const [isOpen, setIsOpen] = useState(false);
 
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
 
     return (
         <>
@@ -21,22 +26,8 @@ const Header = () => {
                     </div>
                     <div className="order-2 md:order-3">
                         <button className="px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-gray-50 rounded-xl flex items-center gap-2">
-                            <div
-                                className="w-8 h-8 flex flex-col justify-between cursor-pointer z-50"
-                                onClick={toggleMenu}
-                            >
-                                <div
-                                    className={`h-1 w-full bg-gray-800 rounded transition-transform duration-300 ${isOpen ? "transform translate-y-3 rotate-45" : ""
-                                        }`}
-                                ></div>
-                                <div
-                                    className={`h-1 w-full bg-gray-800 rounded transition-opacity duration-300 ${isOpen ? "opacity-0" : ""
-                                        }`}
-                                ></div>
-                                <div
-                                    className={`h-1 w-full bg-gray-800 rounded transition-transform duration-300 ${isOpen ? "transform -translate-y-3 -rotate-45" : ""
-                                        }`}
-                                ></div>
+                            <div className="z-50">
+                                <Hamburger toggled={isOpen} toggle={setIsOpen} />
                             </div>
 
                             {/* menu overlay */}
