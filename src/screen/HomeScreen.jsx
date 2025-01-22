@@ -1,8 +1,12 @@
-import Header from '../component/Header'
+import HeroSection from '../component/HeroSection'
+import Navbar from '../component/Navbar'
 
 const HomeScreen = () => {
     return (
-        <Header />
+        <div >
+            <Navbar />
+            <HeroSection />
+        </div>
     )
 
 }
