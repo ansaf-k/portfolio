@@ -12,7 +12,6 @@
 .main {
     font-family: "Jersey 15", serif;
     font-optical-sizing: auto;
-    background-color: #121212;
 }
 
 .hero {
@@ -20,8 +19,8 @@
     font-family: 'Kare', serif;
 }
 
-.hero h1 {
-    line-height: 0.9;
+.hero-sub h1,.hero-sub p {
+    line-height: 40%;
 }
 
 .hero p {
