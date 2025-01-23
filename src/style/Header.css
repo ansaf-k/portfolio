@@ -9,6 +9,13 @@
     font-style: normal; /* Use 'italic' if the font is italic */
 }
 
+@font-face {
+    font-family: 'Bebe-Neue'; /* Your custom name for the font */
+    src: url('../assets/kare-trial-shadow.otf') format('opentype'); /* Path to your .otf file */
+    font-weight: normal; /* Adjust if the font is bold */
+    font-style: normal; /* Use 'italic' if the font is italic */
+}
+
 .main {
     font-family: "Jersey 15", serif;
     font-optical-sizing: auto;
@@ -19,10 +26,15 @@
     font-family: 'Kare', serif;
 }
 
-.hero-sub h1,.hero-sub p {
+.light {
+    font-family: 'Kare', serif;
+}
+
+.hero-sub h1{
     line-height: 40%;
 }
 
 .hero p {
-    font-family: "Poppins", serif;
+    font-family: 'Kare', serif;
+    /* font-family: "Poppins", serif; */
 }

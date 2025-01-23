@@ -7,10 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        darkbrown: "#2e2b22",
-        olive: "#a2b08c",
-        beige: "#dad7c6",
-        gray: "#887e74",
+        black: "#1F1F1F",
+        orange: "#FF4C00",
+        beige: "#CDCABB",
       },
     },
   },
