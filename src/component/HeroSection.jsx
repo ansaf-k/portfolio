@@ -1,19 +1,18 @@
-import Marquee from "react-fast-marquee";
 import "../style/Header.css"
 
 const HeroSection = () => {
     return (
-        <div className="hero h-screen bg-black flex items-center justify-center">
-            <div className="flex h-full justify-center">
-                <Marquee pauseOnClick>
-                    <img className="h-72 w-[27rem] hover:brightness-50 hover:w-[30rem] transition-all duration-300 border-x-2 border-black object-cover" src="./src/assets/IMG_3604.JPG" alt="" />
-                    <img className="h-72 w-[27rem] hover:brightness-50 hover:w-[30rem] transition-all duration-300 border-x-2 border-black object-cover" src="./src/assets/IMG_0884.HEIC" alt="" />
-                    <img className="h-72 w-[27rem] hover:brightness-50 hover:w-[30rem] transition-all duration-300 border-x-2 border-black object-cover" src="./src/assets/IMG_3604.JPG" alt="" />
-                    <img className="h-72 w-[27rem] hover:brightness-50 hover:w-[30rem] transition-all duration-300 border-x-2 border-black object-cover" src="./src/assets/IMG_0884.HEIC" alt="" />
-                    <img className="h-72 w-[27rem] hover:brightness-50 hover:w-[30rem] transition-all duration-300 border-x-2 border-black object-cover" src="./src/assets/IMG_3604.JPG" alt="" />
-                    <img className="h-72 w-[27rem] hover:brightness-50 hover:w-[30rem] transition-all duration-300 border-x-2 border-black object-cover" src="./src/assets/IMG_0884.HEIC" alt="" />
-                </Marquee>
-            </div>
+        <div className="hero w-full h-screen bg-black">
+                {/* 1st */}
+                <div className="h-screen w-1/2 bg-beige">
+                        <div className="flex justify-center items-center h-full">
+                            <img className="h-[40vh] w-[40vh] object-cover" src="../src/assets/IMG_3604.JPG" alt="" />
+                        </div>
+                </div>
+                {/* 2nd */}
+                <div className="h-screen w-1/2 bg-black">
+                   
+                </div>
         </div>
     )
 }

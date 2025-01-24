@@ -1,10 +1,10 @@
 import HeroSection from '../component/HeroSection'
-import Navbar from '../component/Navbar'
+// import Navbar from '../component/Navbar'
 
 const HomeScreen = () => {
     return (
         <div >
-            <Navbar />
+            {/* <Navbar /> */}
             <HeroSection />
         </div>
     )
